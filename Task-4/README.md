@@ -2,11 +2,11 @@
 
 The goal of this subtask is to develop your own model and use it to learn the sine function on the interval $[0, 2\pi]$. Discretize the interval with a suitable number of points (of your choice) and use the values of the sine function at these discretization points as labels. Implement a Quantum Machine Learning model which reproduces the values of the sine function.
 
-Plan : 
+## Plan : 
 
 We have to create a quantum model that can approximate the sine function over the given interval. It's similar to using a neural network to approximate and fit a function, but using quantum circuits instead of classical neural networks.
 
-Steps to proceed:
+### Steps to proceed:
 * Discretize the interval: 
 Choose a number of points (e.g., 100) in the interval [0, 2π]. Calculate the sine values for these points. These will be your training data.
 
@@ -32,10 +32,10 @@ Run the optimization process on your training data.
 Test your trained model on new points within the [0, 2π] interval to see how well it approximates the sine function. 
 What it means to "learn" the sine function:
 
-Your quantum circuit, after training, should be able to take any input x in [0, 2π] and produce an output that's close to sin(x).
-The circuit "learns" in the sense that its parameters are adjusted during training to minimize the difference between its output and the true sine function.
+*Your quantum circuit, after training, should be able to take any input x in [0, $2\pi$] and produce an output that's close to sin(x).
+The circuit "learns" in the sense that its parameters are adjusted during training to minimize the difference between its output and the true sine function.*
 
-Key concepts:
+### Key concepts:
 **Quantum feature maps**: How you encode classical data into quantum states.
 Variational quantum circuits: Parameterized circuits that can be optimized.
 Hybrid quantum-classical optimization: Using classical optimizers to tune quantum circuits.
