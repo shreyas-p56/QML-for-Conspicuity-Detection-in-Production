@@ -33,8 +33,8 @@ Ensure your repository does not contain any personal or team tokens/access infor
 
 ### Team Information:
 Team Member 1:
- - Full Name: 
- - Womanium Program Enrollment ID (see Welcome Email, format- WQ24-xxxxxxxxxxxxxxx):
+ - Full Name: Ronit Dutta
+ - Womanium Program Enrollment ID: WQ24-CZYDdCoXs2WMhkv
 
 
 Team Member 2:
