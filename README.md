@@ -38,8 +38,8 @@ Team Member 1:
 
 
 Team Member 2:
- - Full Name: 
- - Womanium Program Enrollment ID (see Welcome Email, format- WQ24-xxxxxxxxxxxxxxx):
+ - Full Name: Shreyas Patil
+ - Womanium Program Enrollment ID: WQ24-7y0H6kpizfCG7Bx
 
 
 ### Project Solution:
