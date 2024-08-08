@@ -1,6 +1,8 @@
 # QML-for-Conspicuity-Detection-in-Production
 Womanium Quantum+AI 2024 Projects
 
+**Please review the participation guidelines [here](https://github.com/womanium-quantum/Quantum-AI-2024) before starting the project.**
+
 _**Do NOT delete/ edit the format of this read.me file.**_
 
 _**Include all necessary information only as per the given format.**_
@@ -30,24 +32,22 @@ Ensure your repository is public and submitted by **August 9, 2024, 23:59pm US E
 Ensure your repository does not contain any personal or team tokens/access information to access backends. Ensure your repository does not contain any third-party intellectual property (logos, company names, copied literature, or code). Any resources used must be open source or appropriately referenced.
 
 ### Team Information:
-Team Member 1: _(full name)_
- - Email: itsronit2002@gmail.com
- - Discord ID: ronitd_1
- - GitHub ID: ronitd2002
- - Nationality: Indian
- - Current affiliation: Indian Institute of Technology, Kharagpur
+Team Member 1:
+ - Full Name: 
+ - Womanium Program Enrollment ID (see Welcome Email, format- WQ24-xxxxxxxxxxxxxxx):
 
-Team Member 2: Shreyas Patil
- - Email: shreyas.rp56@gmail.com
- - Discord ID: glorious_purpose
- - GitHub ID: shreyas-p56
- - Nationality: Indian
- - Current affiliation: None
+
+Team Member 2:
+ - Full Name: 
+ - Womanium Program Enrollment ID (see Welcome Email, format- WQ24-xxxxxxxxxxxxxxx):
+
 
 ### Project Solution:
 _Include a comprehensive summary of all important information about your project solution here._
 All necessary code files and any additional information required to judge your project solution should be included in the repository. 
 
 ### Project Presentation Deck:
-_Link a 5min. presentation recording or deck here._
+_Upload/ Link a 3min. presentation deck here._
+
+See project presentation guidelines [here](https://docs.google.com/document/d/13nWF8AxFAfFYTWEYPT3BpPdYkqtxxSAjmuXj_zcMh-E/edit?usp=sharing)
 
