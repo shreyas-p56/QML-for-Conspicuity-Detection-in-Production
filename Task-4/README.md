@@ -1,43 +1,52 @@
-# Task 4
+## Task 4
 
-The goal of this subtask is to develop your own model and use it to learn the sine function on the interval $[0, 2\pi]$. Discretize the interval with a suitable number of points (of your choice) and use the values of the sine function at these discretization points as labels. Implement a Quantum Machine Learning model which reproduces the values of the sine function.
+The objective of this subtask was to develop a quantum model capable of learning the sine function over the interval $[0, 2\pi]$. We approached this by discretizing the interval into a suitable number of points and using the corresponding sine values at these points as labels. The goal was to implement a Quantum Machine Learning (QML) model that could approximate the sine function.
 
-## Plan : 
+### Our approach
 
-We have to create a quantum model that can approximate the sine function over the given interval. It's similar to using a neural network to approximate and fit a function, but using quantum circuits instead of classical neural networks.
+We set a cost function using a square loss error function. We used a PQC for the ansatz and trained it to fit the sine function which was discretized into 100 discrete intervals and appropriately split into testing and training datasets. We learn these parameters along with the classical "bias" parameter during the training phase.
 
-### Steps to proceed:
-* Discretize the interval: 
-Choose a number of points (e.g., 100) in the interval [0, 2π]. Calculate the sine values for these points. These will be your training data.
+Additionally, we also implement a **Classical Neural Network** to approximate the same function and analyze how it compares with the QML model and demonstrate the improvement and the advantage the quantum neural network model proves in this case.
 
-* Design a quantum circuit:
-Create a parameterized quantum circuit that will serve as your model. This circuit should have enough flexibility (i.e., parameterized gates) to approximate the sine function.
+### Strategy:
 
-* Prepare input encoding:
-Decide how to encode the input values (x-coordinates) into quantum states. A common method is angle encoding, where you use the input value to set the angle of a rotation gate.
+- **Input Encoding:**  
+  We employed angle encoding to convert the input values (x-coordinates) into quantum states. This involved setting the angle of a rotation gate according to the input value.
 
-* Measurement:
-Decide how to measure the output of your circuit to get a prediction for sin(x). This could be as simple as measuring the expectation value of a Pauli-Z operator on a specific qubit.
+- **Measurement:**  
+  The output of the circuit was measured to generate predictions for sin(x). This was achieved by measuring the expectation value of a Pauli-Z operator on a specific qubit.
 
-* Define a cost function:
-Create a function that calculates the difference between your model's predictions and the true sine values. Mean Squared Error (MSE) is a common choice.
+- **Cost Function Definition:**  
+  To evaluate the model’s performance, we defined a cost function that measured the difference between the model’s predictions and the actual sine values. We opted for the Mean Squared Error (MSE)/ the Square loss as the cost function.
 
-* Optimization:
-Use a classical optimization algorithm (e.g., gradient descent) to adjust the parameters of your quantum circuit to minimize the cost function.
+- **Optimization:**  
+  The parameters of the quantum circuit were optimized using a classical optimization algorithm, such as gradient descent, to minimize the cost function.
 
-* Training:
-Run the optimization process on your training data.
+- **Training:**  
+  The optimization process was run on the training data, allowing the quantum model to learn the sine function.
 
-* Evaluation:
-Test your trained model on new points within the [0, 2π] interval to see how well it approximates the sine function. 
-What it means to "learn" the sine function:
+- **Evaluation:**  
+  After training, the model was tested on new points within the $[0, 2\pi]$ interval to assess its ability to approximate the sine function accurately.
 
-*Your quantum circuit, after training, should be able to take any input x in [0, $2\pi$] and produce an output that's close to sin(x).
-The circuit "learns" in the sense that its parameters are adjusted during training to minimize the difference between its output and the true sine function.*
+  ## Classical Neural Network
 
-### Key concepts:
-**Quantum feature maps**: How you encode classical data into quantum states.
-Variational quantum circuits: Parameterized circuits that can be optimized.
-Hybrid quantum-classical optimization: Using classical optimizers to tune quantum circuits.
+  We implement a classical Neural Network made up of three hidden layers to approximate the sine function. The purpose is to compare it with the QML version of the same approximator.
 
-Remember, the goal is not to calculate the sine function (which quantum computers aren't particularly good at) but to demonstrate that a quantum circuit can be trained to approximate a known function, showcasing the potential of quantum machine learning
+  Discretize the interval of $[0, 2\pi]$ into a thousand points. Distribute them radomly into training and test datasets in 80:20 ratio. We use the test dataset to validate our trained model, to make sure it hasn't under/overfit the training data.
+
+  After testing a few configurations of layers and number of neurons in each layer of the NN, we figured a configuration that works well in approximating the sine function. That is, we start with the input $x$, feed it to a hidden layer of 128 neurons. The next hidden layer is made up of 256 neurons, and the third one is made up of 128 again. 
+
+Each layer is succeeded by a ReLU activation function. This provides the non-linearity to the network. The layer after is the output. Since the ReLU acitvation function has an output range of $[0, \infty]$, we also add an operation of $z = 2z-1$ at the end.
+
+At the beginning of the operations in the network, we also divide the input by $\pi$ and subtract 1 from it to normalize the inputs into the interval of $[-1,1]$.
+
+We use the inbuit MSELoss, i.e., Mean Squared Error Loss, provided by PyTorch, as the loss criterion. We also use a scheduler that drops the Learning Rate (LR) by a factor at a defined number of steps. This is for better approach to optimization, so that the Gradient Descent algorithm doesn't get stuck oscillating around a local optima due to a relatively larger LR when it could go to a better approximation of the local optima with a lower LR.
+
+Post-training, we check how the approximation is for a random number in the interval. After that we compute the trained model's approximations for both train and test datasets, and plot them.
+
+# Results, comparisons and Quantum Advantage
+The results are attached below for both the classical and quantum training and it's glaringly obvious that the quantum method clearly outperforms the classical implementation.
+
+[classical results](classical-pred.png)
+
+[quantum results](quantum-pred.png)

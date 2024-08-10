@@ -55,7 +55,7 @@ For Task 2, we built a variational classifier based loosely on the principles of
 For Task 3, we built a quanvolutional neural network to help handwritten digit identification from the `MNIST` Handwritten Digit Recognition Dataset. The results of the same and the requisite explanation are attached in the requisite directory.
 
 #### Task 4:
-In Task 4, we set a loss function and a cost function. We used a PQC for the ansatz and trained it to fit the sine function which was discretized into 100 discrete intervals and appropriately split into testing and training datasets. We learn these parameters along with the classical "bias" parameter during the training phase.
+In Task 4, we set a cost function that uses square loss for prediction and fitting. We used a PQC for the ansatz and trained it to fit the sine function which was discretized into 100 discrete intervals and appropriately split into testing and training datasets. We learn these parameters along with the classical "bias" parameter during the training phase.
 
 Additionally, we also implement a classical Neural Network to approximate the same function and analyze how it compares with the QML model and demonstrate the improvement and the advantage the quantum neural network model proves in this case.
 
