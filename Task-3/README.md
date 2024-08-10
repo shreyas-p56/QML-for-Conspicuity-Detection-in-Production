@@ -1,11 +1,9 @@
 # Task 3
 
 ### Def :
-Quanvolutional filters each produce a feature map when applied to an input tensor, by transforming spatially-local subsections of the input tensor using the quanvolutional filter.
+### Quanvolutional Filters
 
-However unlike the simple element-wise matrix multiplication operation that a classical convolutional filter applies, a
-quanvolutional filters transforms input data using a quantum
-circuit, which can be structured or random.
+Quanvolutional filters are designed to produce feature maps by applying quantum transformations to spatially-local subsections of an input tensor. Unlike classical convolutional filters that rely on simple element-wise matrix multiplication, quanvolutional filters utilize quantum circuits to transform the input data. These quantum circuits can be either structured or randomly generated, providing a unique approach to feature extraction in quantum neural networks.
 
 ### Application:
 
