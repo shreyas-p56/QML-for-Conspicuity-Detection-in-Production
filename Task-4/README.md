@@ -50,3 +50,5 @@ The results are attached below for both the classical and quantum training and i
 ![classical results](https://github.com/shreyas-p56/QML-for-Conspicuity-Detection-in-Production/blob/main/Task-4/classical-pred.png?raw=true)
 
 ![quantum results](https://github.com/shreyas-p56/QML-for-Conspicuity-Detection-in-Production/blob/main/Task-4/quantum-pred.png?raw=true)
+
+The first plot corresponds to the classical implementation while the second one corresponds to quantum implementation.
