@@ -43,14 +43,26 @@ Team Member 2:
 
 
 ### Project Solution:
-Pennylane Codebooks from Task 1 have been completed, and presented in Python Notebooks by topic.  
+---
 
-We went through the tutorials in Tasks 2 & 3, understood them, ran the code by ourselves locally, and added explanations in our own words.  
+#### Task 1:
+Pennylane Codebooks from Task 1 have been completed and the compiled files are run on jupyter notebooks locally, and presented in Jupyter Notebooks by title
 
-In Task 4, we used the knowledge gained in Tasks 2 and 3 to build a parametrized quantum circuit. Basic functions such as square_loss and cost have been borrowed from prior tasks. We build a quantum circuit with a single qubit, encoded the input $x$ as an `RY` rotation by the same angle. We then apply a parametrized `qml.Rot()` on the qubit. We learn these parameters along with the classical "bias" parameter during the training phase. We also implement a classical Neural Network to approximate the same function and analyze how it compares with the QML model. The QML model is able to approximate the sine function far better than the Classical NN could, my orders of magnitude in the average cost.  
+#### Task 2:
+For Task 2, we built a variational classifier based loosely on the principles of parity function example and used the same logic against the `IRIS` dataset.
+
+#### Task 3:
+For Task 3, we built a quanvolutional neural network to help handwritten digit identification from the `MNIST` Handwritten Digit Recognition Dataset. The results of the same and the requisite explanation are attached in the requisite directory.
+
+#### Task 4:
+In Task 4, we set a loss function and a cost function. We used a PQC for the ansatz and trained it to fit the sine function which was discretized into 100 discrete intervals and appropriately split into testing and training datasets. We learn these parameters along with the classical "bias" parameter during the training phase.
+
+Additionally, we also implement a classical Neural Network to approximate the same function and analyze how it compares with the QML model and demonstrate the improvement and the advantage the quantum neural network model proves in this case.
+
 
 All detailed explanations are provided in the Python Notebooks in the respective folders of each Task. 
 
+---
 ### Project Presentation Deck:
 _Upload/ Link a 3min. presentation deck here._
 
