@@ -60,7 +60,7 @@ In Task 4, we set a cost function that uses square loss for prediction and fitti
 Additionally, we also implement a classical Neural Network to approximate the same function and analyze how it compares with the QML model and demonstrate the improvement and the advantage the quantum neural network model proves in this case.
 
 
-All detailed explanations are provided in the Python Notebooks in the respective folders of each Task. 
+All detailed explanations are provided in the Python Notebooks in the respective directories of each Task. 
 
 ---
 ### Project Presentation Deck:
