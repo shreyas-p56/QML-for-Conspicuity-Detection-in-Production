@@ -47,6 +47,6 @@ Post-training, we check how the approximation is for a random number in the inte
 # Results, comparisons and Quantum Advantage
 The results are attached below for both the classical and quantum training and it's glaringly obvious that the quantum method clearly outperforms the classical implementation.
 
-[classical results](classical-pred.png)
+[classical results](https://github.com/shreyas-p56/QML-for-Conspicuity-Detection-in-Production/blob/main/Task-4/classical-pred.png)
 
-[quantum results](quantum-pred.png)
+[quantum results](https://github.com/shreyas-p56/QML-for-Conspicuity-Detection-in-Production/blob/main/Task-4/quantum-pred.png)
