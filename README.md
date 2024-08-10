@@ -43,8 +43,13 @@ Team Member 2:
 
 
 ### Project Solution:
-_Include a comprehensive summary of all important information about your project solution here._
-All necessary code files and any additional information required to judge your project solution should be included in the repository. 
+Pennylane Codebooks from Task 1 have been completed, and presented in Python Notebooks by topic.  
+
+We went through the tutorials in Tasks 2 & 3, understood them, ran the code by ourselves locally, and added explanations in our own words.  
+
+In Task 4, we used the knowledge gained in Tasks 2 and 3 to build a parametrized quantum circuit. Basic functions such as square_loss and cost have been borrowed from prior tasks. We build a quantum circuit with a single qubit, encoded the input $x$ as an `RY` rotation by the same angle. We then apply a parametrized `qml.Rot()` on the qubit. We learn these parameters along with the classical "bias" parameter during the training phase. We also implement a classical Neural Network to approximate the same function and analyze how it compares with the QML model. The QML model is able to approximate the sine function far better than the Classical NN could, my orders of magnitude in the average cost.  
+
+All detailed explanations are provided in the Python Notebooks in the respective folders of each Task. 
 
 ### Project Presentation Deck:
 _Upload/ Link a 3min. presentation deck here._
